@@ -1,4 +1,9 @@
 import makeDetailTemplate from './detail-template.js';
+import makeHeaderTemplate from './header-template.js';
+
+const header = document.getElementById('header');
+const dom = makeHeaderTemplate();
+header.appendChild(dom);
 
 const detailList = document.getElementById('detail-list');
 const searchParams = new URLSearchParams(window.location.search);
