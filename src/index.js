@@ -1,13 +1,5 @@
-import makeListTemplate from './make-template.js';
-import fakeFilms from '../data/fake-films.js';
+import loadFilms from './load-films.js';
 
-const filmList = document.getElementById('film-list');
+const url = 'https://ghibliapi.herokuapp.com/films';
 
-function loadFilms(fakeFilms) { 
-    fakeFilms.forEach(film => {
-        const dom = makeListTemplate(film);
-        filmList.appendChild(dom); 
-    });  
-}
-
-loadFilms(fakeFilms);
+fetch(url).then(response => response.json()).then(results => {loadFilms(results);});
