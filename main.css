@@ -2,9 +2,40 @@
     font-family: 'Comfortaa', cursive;
 }
 
+body {
+    background-color: #48AEF0;
+}
+
 ul {
     list-style: none;
     line-height: 2em;
+}
+
+.detail {
+    display: flex;
+}
+
+dd {
+    justify-content: flex-start;
+    align-items: flex-start;
+   
+}
+
+dt {
+    width: 100px;
+}
+
+dl {
+    background-color: white;
+    max-width: 500px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    
+}
+
+#logo {
+    width: 200px;
 }
 
 a:link {
@@ -22,3 +53,9 @@ a:link {
   a:active {
     text-decoration: underline;
   }
+
+#film-list {
+    background-color: white;
+    border-radius: 5px;
+    max-width: 300px;
+}
