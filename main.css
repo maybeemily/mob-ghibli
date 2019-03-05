@@ -6,23 +6,49 @@ body {
     background-color: #48AEF0;
 }
 
+#header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    min-width: 700px;
+}
+
+#logo {
+    max-width: 200px;
+}
+
 ul {
     list-style: none;
     line-height: 2em;
 }
 
+#film-list {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 5% 20% 0% 20%;
+    min-width: 300px;
+    padding: 10px 0px 10px 0px;
+}
+
 .detail {
     display: flex;
+    min-width: 300px;
 }
 
 dd {
     justify-content: flex-start;
     align-items: flex-start;
-   
+    min-width: 280px;
 }
 
 dt {
-    width: 100px;
+    min-width: 100px;
 }
 
 dl {
@@ -30,19 +56,16 @@ dl {
     max-width: 500px;
     border-radius: 5px;
     padding: 10px;
-    text-align: left;  
-}
-
-#logo {
-    width: 200px;
+    text-align: left;
 }
 
 a:link {
     text-decoration: none;
+    color: rgb(146, 181, 218);
   }
   
   a:visited {
-    text-decoration: none;
+    color: rgb(1, 1, 101);
   }
   
   a:hover {
@@ -53,8 +76,3 @@ a:link {
     text-decoration: underline;
   }
 
-#film-list {
-    background-color: white;
-    border-radius: 5px;
-    max-width: 300px;
-}
